@@ -6,7 +6,7 @@
 <title>Emberline Cloud Saves</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#030303;--panel:#191919;--panel2:#151515;--line:#5b5b5b;
@@ -15,7 +15,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text)}
 html{scroll-behavior:smooth}
-body{font-family:"Jersey 15",monospace;letter-spacing:0;overflow-x:hidden;-webkit-font-smoothing:none;text-rendering:geometricPrecision}
+body{font-family:"Pixelify Sans",monospace;letter-spacing:0;overflow-x:hidden;-webkit-font-smoothing:none;text-rendering:geometricPrecision}
 button,a{font:inherit}a{color:inherit}
 button{appearance:none;-webkit-tap-highlight-color:transparent}
 .app{min-height:100vh;position:relative;isolation:isolate}
@@ -32,7 +32,7 @@ button{appearance:none;-webkit-tap-highlight-color:transparent}
 @keyframes copied{0%{transform:scale(1)}45%{transform:scale(1.18) rotate(-3deg)}100%{transform:scale(1)}}
 .logoRow{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:700;animation:floatIn .5s ease both}
 .fire{display:inline-block;animation:fire 1.8s ease-in-out infinite;filter:drop-shadow(0 0 5px rgba(255,104,28,.22))}
-.logoWord{font-family:"Jersey 15",monospace;font-size:25px;letter-spacing:-1px}
+.logoWord{font-family:"Pixelify Sans",monospace;font-size:25px;letter-spacing:-1px}
 .logoSub{font-size:24px;margin-left:2px}
 .brandLogo{display:block;width:215px;height:auto;image-rendering:auto;filter:drop-shadow(0 0 7px rgba(255,90,30,.10));transition:transform .35s cubic-bezier(.2,.8,.2,1),filter .35s ease}
 .logoRow:hover .brandLogo{transform:translateY(-1px) scale(1.012);filter:drop-shadow(0 0 12px rgba(255,90,30,.18))}
@@ -267,4 +267,33 @@ window.addEventListener("hashchange",render);
 render();
 </script>
 </body>
-</html>
+</html><style>
+/* Final Emberline typography pass */
+html,body{font-weight:400}
+.logoRow{font-weight:600}
+.logoWord{font-weight:600}
+.logoSub{font-weight:600}
+.helpBtn{font-weight:600}
+.cardTitle{font-weight:600}
+.code{font-weight:600}
+.detailsBtn{font-weight:600}
+.back{font-weight:600}
+.heading{font-weight:700}
+.hero .logoWord{font-weight:600}
+.hero .logoSub{font-weight:600}
+.heroText{font-size:21px;line-height:1.6;font-weight:400}
+.helpBtn{font-size:29px}
+.cardTitle{font-size:23px;margin-bottom:15px}
+.code{font-size:20px;letter-spacing:1.1px}
+.detailsBtn{font-size:16px;padding:9px 27px}
+.stats{font-size:15px;gap:13px 5px;line-height:1.25;font-weight:400}
+.toast{font-size:19px;font-weight:500}
+.back{font-size:23px}
+.detailInfo{font-size:20px;line-height:1.48;font-weight:400}
+.detailInfo .section{margin-bottom:16px}
+.achievementList{line-height:1.45}
+@media(max-width:900px){
+  .heroText{font-size:19px}
+  .detailInfo{font-size:18px}
+}
+</style>
